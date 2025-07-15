@@ -1,0 +1,22 @@
+{
+    "read_files": "[ data/trimmed_fastq/SRR24471211_1.trimmed.fastq, data/trimmed_fastq/SRR24471211_2.trimmed.fastq]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 12055620,
+    "num_assigned_fragments": 12055620,
+    "num_frags_with_concordant_consistent_mappings": 11617702,
+    "num_frags_with_inconsistent_or_orphan_mappings": 577982,
+    "strand_mapping_bias": 0.509961436435536,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 5924580,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 5693122,
+    "SF": 355369,
+    "SR": 222613,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
