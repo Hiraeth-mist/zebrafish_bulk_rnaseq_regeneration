@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.2",
+    "index": "salmon_index",
+    "libType": "A",
+    "mates1": "data/trimmed_fastq/SRR24471197_1.trimmed.fastq",
+    "mates2": "data/trimmed_fastq/SRR24471197_2.trimmed.fastq",
+    "validateMappings": [],
+    "threads": "4",
+    "output": "results/salmon_quant/SRR24471197",
+    "auxDir": "aux_info"
+}
