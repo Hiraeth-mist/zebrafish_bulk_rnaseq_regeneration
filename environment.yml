@@ -1,0 +1,23 @@
+name: rnaseq-zfish
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.2.0
+  - r-deseq2
+  - r-tximport
+  - r-readr
+  - r-pheatmap
+  - r-venndiagram
+  - r-ggvenn
+  - r-annotationdbi
+  - r-org.dr.eg.db
+  - r-biomart
+  - r-genomicfeatures
+  - r-clusterprofiler
+  - r-enrichplot
+  - r-enhancedvolcano
+  - r-tidyverse
+  - r-rcolorbrewer
+  - r-remotes
