@@ -12,8 +12,6 @@ bulk_rnaseq_zebrafish_regeneration/
 ├── README.md
 ├── environment.yml
 ├── samples.csv
-├── ref_genome/
-│   └── Danio_rerio.GRCz11.111.gtf
 ├── data/
 │   └── salmon_quant/
 ├── scripts/
