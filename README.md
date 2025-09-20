@@ -64,7 +64,7 @@ We extract and visualize expression of genes involved in RNA Polymerase I activi
 MIT License
 
 ## 📫 Contact
-Created by Akshat Jaiswal (Biomedical Engineering @ IIT Ropar) | ([Linkedin](https://www.linkedin.com/in/akshat-jaiswal-b06a93195/)) | Email ID: akshat.biio@proton.me
+Created by Akshat Jaiswal (Biomedical Engineering @ IIT Ropar) | ([Linkedin](https://www.linkedin.com/in/akshat-jaiswal-9234b5384/)) | Email ID: akshat.biio@proton.me
 
 ---
 
