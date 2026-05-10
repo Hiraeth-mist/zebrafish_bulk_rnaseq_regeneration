@@ -1,13 +1,81 @@
-# 🧬 Zebrafish Fin Regeneration - Bulk RNA-seq Analysis
+# 🧬 Zebrafish Fin Regeneration — Bulk RNA-seq Analysis
 
-This project analyzes bulk RNA-seq data from zebrafish caudal fin regeneration at different time points (0dpa, 1dpa, 4dpa) to investigate differential gene expression and pathway regulation, with a special focus on RNA Polymerase I–related genes.
+This repository contains a comprehensive bulk RNA-seq analysis workflow focused on **zebrafish caudal fin regeneration** across multiple regeneration stages (0dpa, 1dpa, and 4dpa).
 
-The bulk RNA-seq data analysed in this project was taken from GEO omnibus, Series GSE231956.
+The project investigates transcriptomic changes during regeneration with a particular emphasis on **RNA Polymerase I–related genes**, regenerative signaling pathways, and differential gene expression dynamics.
 
+The dataset used in this project was obtained from **GEO Omnibus Series GSE231956**.
 
-## 🗂️ Project Structure
+---
 
-```
+# 🔬 Project Overview
+
+Zebrafish possess remarkable regenerative abilities, making them a valuable model organism for studying tissue regeneration and repair.
+
+This project explores gene expression changes occurring during early regeneration stages following caudal fin amputation using bulk RNA sequencing approaches.
+
+Key objectives include:
+
+* Identification of differentially expressed genes (DEGs)
+* Analysis of regeneration-associated pathways
+* Investigation of RNA Polymerase I machinery during regeneration
+* Functional enrichment and pathway visualization
+* Generation of publication-style visualizations
+
+---
+
+# ⚙️ Analysis Workflow
+
+The computational workflow includes:
+
+1. Transcript quantification using **Salmon**
+2. Transcript-to-gene mapping via **makeTxDbFromGFF**
+3. Gene-level quantification using **tximport**
+4. Differential expression analysis using **DESeq2**
+5. Pairwise comparisons:
+
+   * 1dpa vs 0dpa
+   * 4dpa vs 0dpa
+   * 4dpa vs 1dpa
+6. Functional enrichment analysis:
+
+   * Gene Ontology (GO)
+   * KEGG pathway analysis
+7. Visualization and interpretation of biological pathways
+
+---
+
+# 🧬 RNA Polymerase I–Focused Analysis
+
+Special emphasis was placed on genes associated with RNA Polymerase I activity and ribosomal biogenesis, including:
+
+* `rrn3`
+* `taf1b`
+* `polr1b`
+* `polr1e`
+
+Expression dynamics, differential expression status, and pathway associations of these genes were analyzed throughout the regeneration process.
+
+---
+
+# 📊 Key Visualizations
+
+The project includes multiple downstream visualizations such as:
+
+* MA plots
+* Volcano plots
+* Heatmaps of top differentially expressed genes
+* Venn diagrams of overlapping DEGs
+* GO enrichment dotplots
+* KEGG pathway enrichment plots
+* Gene expression visualization for RNA Polymerase I–related genes
+* Enrichment network maps (emapplots)
+
+---
+
+# 📁 Repository Structure
+
+```bash
 bulk_rnaseq_zebrafish_regeneration/
 ├── README.md
 ├── environment.yml
@@ -24,51 +92,99 @@ bulk_rnaseq_zebrafish_regeneration/
 │   └── tables/
 ```
 
-## 🧪 Biological Context
-Zebrafish have a remarkable ability to regenerate their caudal fins. Understanding the transcriptomic landscape during early stages of regeneration (1 and 4 days post-amputation, dpa) can reveal gene regulatory networks critical for wound response, proliferation, and tissue patterning. We explore key differentially expressed genes and pathways, focusing on RNA Polymerase I machinery.
+---
 
-## ⚙️ Workflow Overview
+# 🛠️ Tools & Technologies
 
-1. Transcript quantification with **Salmon** (pre-processed)
-2. Transcript-to-gene mapping using **makeTxDbFromGFF**
-3. Gene-level expression analysis via **tximport** + **DESeq2**
-4. Pairwise DE comparisons (1dpa vs 0dpa, 4dpa vs 0dpa, 4dpa vs 1dpa)
-5. Visualization:
-    - MA and Volcano plots
-    - Top 50 DE genes heatmaps
-    - Venn diagrams of overlap
-    - RNA Polymerase I–specific gene expression
-6. Functional enrichment:
-    - GO BP and KEGG pathway analysis
-    - Network visualizations (emapplots)
+* R
+* DESeq2
+* tximport
+* Salmon
+* clusterProfiler
+* enrichplot
+* ggplot2
+* AnnotationDbi
+* Bioconductor packages
 
-## 📦 Dependencies
-Install via conda:
+---
+
+# 📦 Installation & Environment Setup
+
+Clone the repository and install dependencies using Conda:
+
 ```bash
 conda env create -f environment.yml
 conda activate rnaseq-zfish
 ```
 
-## 📊 Sample Output
+---
 
-### Volcano Plot (4dpa vs 0dpa)
-![volcano](results/plots/volcano_4dpa_vs_0dpa.png)
+# 📈 Sample Outputs
 
-### GO Enrichment Dotplot
-![go](results/plots/GO_dotplot_4dpa_vs_0dpa.png)
+## Volcano Plot (4dpa vs 0dpa)
 
-## 🧬 RNA Polymerase I Focus
-We extract and visualize expression of genes involved in RNA Polymerase I activity including **rrn3, taf1b, polr1b, polr1e** and examine their DE status and heatmap patterns.
+```markdown
+results/plots/volcano_4dpa_vs_0dpa.png
+```
 
-## 📜 License
-MIT License
+## GO Enrichment Dotplot
 
-## 📫 Contact
-Created by Akshat Jaiswal (Biomedical Engineering @ IIT Ropar) | ([Linkedin](https://www.linkedin.com/in/akshat-jaiswal-9234b5384/)) | Email ID: akshat.biio@proton.me
+```markdown
+results/plots/GO_dotplot_4dpa_vs_0dpa.png
+```
 
 ---
 
-## 🧠 Citation / Inspiration
-- DESeq2: Love et al., Genome Biology 2014
-- clusterProfiler: Yu et al., OMICS 2012
-- Zebrafish Regeneration: Marques et al., 2019
+# 🚀 Future Improvements
+
+Planned additions to this project include:
+
+* GSEA (Gene Set Enrichment Analysis)
+* Advanced pathway visualization
+* Time-series transcriptomic analysis
+* Integration with single-cell RNA-seq datasets
+* Publication-ready figure refinement
+
+---
+
+# 👨‍🔬 Author
+
+## Akshat Jaiswal
+
+Biomedical Engineering | Computational Biology | Bioinformatics
+
+Research Interests:
+
+* Aging Biology
+* Regeneration Biology
+* RNA Biology
+* Transcriptomics
+* Computational Genomics
+
+---
+
+# 🌐 Connect & Collaborate
+
+* 🔗 LinkedIn: https://www.linkedin.com/in/akshat-jaiswal-i-omics-flow-lab-9234b5384/
+* 🌍 Portfolio: https://omicsflowlab.netlify.app/
+* ✉️ Work Email: [omicsflow.lab@gmail.com](mailto:omicsflow.lab@gmail.com)
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
+# 📚 References & Inspiration
+
+* Love MI et al. (2014) — DESeq2, *Genome Biology*
+* Yu G et al. (2012) — clusterProfiler, *OMICS*
+* Marques IJ et al. — Zebrafish regeneration studies
+
+---
+
+If you find this repository useful, feel free to ⭐ the project, fork it, or contribute.
+
+Open to collaborations, computational biology opportunities, and bioinformatics-related projects.
