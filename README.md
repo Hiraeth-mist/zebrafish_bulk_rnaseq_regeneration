@@ -3,7 +3,7 @@
 A public-data transcriptomics project examining gene-expression changes at 0, 1, and 4 days post-amputation during zebrafish caudal-fin regeneration.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Omics%20Flow%20Lab-0f766e)](https://omicsflowlab.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Omics%20Flow%20Lab-0f766e)](https://omics-flow-lab.akshatjaisw.chatgpt.site/?utm_source=github&utm_medium=portfolio&utm_campaign=consulting_launch_aug2026)
 [![Data](https://img.shields.io/badge/GEO-GSE231956-2563eb)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231956)
 
 ## Research focus
@@ -60,6 +60,6 @@ This repository uses public data and contains no client or confidential material
 
 I support wet-lab teams with bulk RNA-seq analysis, focused re-analysis, reproducible code, and manuscript-ready figures.
 
-- [Omics Flow Lab](https://omicsflowlab.netlify.app/)
+- [Omics Flow Lab](https://omics-flow-lab.akshatjaisw.chatgpt.site/?utm_source=github&utm_medium=portfolio&utm_campaign=consulting_launch_aug2026)
 - [LinkedIn](https://www.linkedin.com/in/akshat-jaiswal-i-omics-flow-lab-9234b5384/)
 - [omicsflow.lab@gmail.com](mailto:omicsflow.lab@gmail.com)
